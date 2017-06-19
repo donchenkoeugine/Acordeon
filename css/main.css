@@ -1,0 +1,66 @@
+html, body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+#acordeon {
+	width: 40%;
+	min-width: 300px;
+	margin: 0 auto;
+}
+.item_acordeon {
+	margin-bottom: 5px;
+}
+.title_item_acordeon{
+	border-radius: 10px;
+	position: relative;
+	padding: 10px 15px;
+	background-color: #DBDBDB;
+	color: black;
+}
+.item_acordeon:nth-of-type(odd) .title_item_acordeon{
+	background-color: #545454;
+	color: white;
+}
+.item_acordeon .title_item_acordeon:hover {
+	background-color: #F59806;
+	color: white;
+}
+.title_item_acordeon:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	border-top: 12px solid #F59806;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	transition: .5s;
+}
+.selected_item_acordeon, .item_acordeon:nth-of-type(odd) .selected_item_acordeon{
+	background-color: #F59806;
+	color: white;
+}
+.selected_item_acordeon:after {
+	border-top-color: white;
+	transform: rotate(180deg);
+}
+.title_item_acordeon:hover:after{
+	border-top-color: white;
+}
+.part_acordeon {
+	background-color: #DBDBDB;
+	border-radius: 10px;
+	margin-top: -15px;
+	padding: 20px 15px 10px;
+	display: none;
+}
+.subitem_acordeon {
+	padding: 5px 0;
+	margin-left: 0;
+}
+.open_acordeon {
+	display: block;
+}
