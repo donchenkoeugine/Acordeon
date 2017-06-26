@@ -5,30 +5,30 @@ html, body, ul, li {
 li {
 	list-style-type: none;
 }
-#acordeon {
+#accordion {
 	width: 40%;
 	min-width: 300px;
 	margin: 0 auto;
 }
-.item_acordeon {
+.item_accordion {
 	margin-bottom: 5px;
 }
-.title_item_acordeon{
+.title_item_accordion{
 	border-radius: 10px;
 	position: relative;
 	padding: 10px 15px;
 	background-color: #DBDBDB;
 	color: black;
 }
-.item_acordeon:nth-of-type(odd) .title_item_acordeon{
+.item_accordion:nth-of-type(odd) .title_item_accordion{
 	background-color: #545454;
 	color: white;
 }
-.item_acordeon .title_item_acordeon:hover {
+.item_accordion .title_item_accordion:hover {
 	background-color: #F59806;
 	color: white;
 }
-.title_item_acordeon:after {
+.title_item_accordion:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -39,28 +39,28 @@ li {
 	border-right: 8px solid transparent;
 	transition: .5s;
 }
-.selected_item_acordeon, .item_acordeon:nth-of-type(odd) .selected_item_acordeon{
+.selected_item_accordion, .item_accordion:nth-of-type(odd) .selected_item_accordion{
 	background-color: #F59806;
 	color: white;
 }
-.selected_item_acordeon:after {
+.selected_item_accordion:after {
 	border-top-color: white;
 	transform: rotate(180deg);
 }
-.title_item_acordeon:hover:after{
+.title_item_accordion:hover:after{
 	border-top-color: white;
 }
-.part_acordeon {
+.part_accordion {
 	background-color: #DBDBDB;
 	border-radius: 10px;
 	margin-top: -15px;
 	padding: 20px 15px 10px;
 	display: none;
 }
-.subitem_acordeon {
+.subitem_accordion {
 	padding: 5px 0;
 	margin-left: 0;
 }
-.open_acordeon {
+.open_accordion {
 	display: block;
 }
